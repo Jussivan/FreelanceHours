@@ -5,11 +5,12 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
+use App\Models\User;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\User>
  */
-class UserFactory extends Factory
+class ProjectFactory extends Factory
 {
     /**
      * The current password being used by the factory.
@@ -24,10 +25,12 @@ class UserFactory extends Factory
     public function definition(): array
     {
         return [
-            'name' => fake()->name(),
-            'email' => fake()->unique()->safeEmail(),
-            'rating' => fake()->randomElement([1,2,3,4,5]),
-            'avatar' => 'https://avatar.iran.liara.run/public'
+            'title' => collect(fake()->words(5))->join(' '),
+            'description' => fake()->randomHtml(),
+            'ends_at' => fake()->dateTimeBetween('now', '+ 3 days'),
+            'status' => fake()->randomElement(['open', 'closed']),
+            'tech_stack' => fake()->randomElement(['react', 'php', 'laravel', 'vue', 'tailwindcss', 'javascript', 'next.js', 'python'], random_int(1,5)),
+            'created_by' => \App\Models\User::factory(),
         ];
     }
 }
