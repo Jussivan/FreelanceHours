@@ -1,4 +1,6 @@
 <div>
-    <h1>livewire show</h1>
-    aaaaaaaaaa
+    <pre>
+        title: {{ $project->title }}
+        description : {{ $project->description }}
+    </pre>
 </div>
