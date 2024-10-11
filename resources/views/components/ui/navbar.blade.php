@@ -2,13 +2,13 @@
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex justify-between">
         <a class="text-white font-bold items-center flex gap-2">
             <x-ui.logo class="w-10"/>
-            <span class="text-xl">FreelanceHours</span>
+            <span class="text-[#6a00f4]">FreelanceHours</span>
         </a>
 
         <ul class="text-[#C3C3D1] flex items-center gap-4 text-[16px]">
-            <li class="hover:underline cursor-pointer"><a>Anunciar um projeto</a></li>
-            <li class="hover:underline cursor-pointer"><a>Procurar um projeto</a></li>
-            <li class="hover:underline cursor-pointer"><a>Como funciona?</a></li>
+            <li class="text-[#6a00f4] font-bold hover:underline cursor-pointer"><a>Anunciar um projeto</a></li>
+            <li class="text-[#6a00f4] font-bold hover:underline cursor-pointer"><a>Procurar um projeto</a></li>
+            <li class="text-[#6a00f4] font-bold hover:underline cursor-pointer"><a>Como funciona?</a></li>
         </ul>
 
         <div class="flex items-center gap-4">
