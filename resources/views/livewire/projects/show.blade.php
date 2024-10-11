@@ -1,6 +1,6 @@
 <div>
     <pre>
         title: {{ $project->title }}
-        description : {{ $project->description }}
+        description : {!! $project->description !!}
     </pre>
 </div>
