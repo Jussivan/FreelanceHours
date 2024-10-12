@@ -7,10 +7,10 @@
         " @keydown.escape.window="showModal = false"> <!-- Fechar com ESC -->
 
         <div>
-            <button class="bg-[#1E1E2C] hover:bg-[#313145] transition duration-300 ease-in-out p-[8px] rounded-md"
-                wire:click="$set('modal', false)">
-                <x-ui.icons.x class="w-[32px] h-[32px] text-white" />
-            </button>
+        <button class="bg-[#1E1E2C] hover:bg-[#313145] transition duration-300 ease-in-out p-[8px] rounded-md"
+            @click="showModal = false">
+            <x-ui.icons.x class="w-[32px] h-[32px] text-white" />
+        </button>
         </div>
         <div class="flex flex-col gap-6">
             <div class="text-[28px]">Envie sua proposta</div>
